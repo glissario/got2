@@ -37,7 +37,6 @@ class App extends Component {
         <ol>
           {this.state.data.map((family) => (
             <GotFamily
-              className="listEntry"
               key={family.url}
               family={family.name}
               index={family.url.replace(/\D/g, "")}
