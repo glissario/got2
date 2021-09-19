@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(240, 240, 240);
+  margin: 1rem;
 }
 
 main {
@@ -30,7 +31,7 @@ h1 {
 }
 
 .App-logo {
-  max-width: 90%;
+  max-width: 95%;
   background-color: #fafafa;
 }
 
@@ -45,6 +46,7 @@ h1 {
 
 ol {
   padding: 0;
+  max-width: 95%;
 }
 
 .button {

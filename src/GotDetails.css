@@ -45,10 +45,13 @@ h2 {
 @media only screen and (max-width: 814px) {
   h2 {
     font-size: 1.75rem;
+    max-width: 90%;
   }
-  .wappon {
-    font-size: 0.9rem;
+  .coatOfArms {
+    max-width: 90%;
+    padding: 2rem 0.5rem;
   }
+
   .follower {
     font-size: 0.9rem;
   }

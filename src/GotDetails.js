@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import "./GotDetails.css";
 
@@ -34,6 +34,7 @@ class GotDetails extends React.Component {
       this.getSwornMembers();
     }
   }
+
   async getOverlord() {
     this.validateOverlord = true;
 
@@ -70,6 +71,10 @@ class GotDetails extends React.Component {
     }
   }
 
+  goBack = () => {
+    this.props.history.goBack();
+  };
+
   render() {
     return (
       <main>
@@ -77,9 +82,10 @@ class GotDetails extends React.Component {
           <h2>
             {this.state.family.name + " from " + this.state.family.region}
           </h2>
-          <h3 className="coatOfArms">
-            {"CoatOfArms: " + this.state.family.coatOfArms}{" "}
-          </h3>
+          <p className="coatOfArms">
+            <strong>CoatOfArms: </strong>
+            {this.state.family.coatOfArms}{" "}
+          </p>
 
           <Link
             className="listEntry"
@@ -99,7 +105,9 @@ class GotDetails extends React.Component {
               </label>
             ))}
           </div>
-          <button class="button">BACK</button>
+          <button class="button" onClick={this.props.history.goBack}>
+            BACK
+          </button>
         </section>
       </main>
     );
