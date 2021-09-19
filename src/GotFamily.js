@@ -9,17 +9,15 @@ class GotFamily extends Component {
 
   render() {
     return (
-      <div>
-        <Link
-          className="listEntry"
-          to={{
-            pathname: "/got/" + this.props.index,
-            state: { name: "25" },
-          }}
-        >
-          {this.props.family}
-        </Link>
-      </div>
+      <Link
+        className="listEntry"
+        to={{
+          pathname: "/got/" + this.props.index,
+          state: { name: "25" },
+        }}
+      >
+        {this.props.family}
+      </Link>
     );
   }
 }
