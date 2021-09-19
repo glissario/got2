@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import "./GotDetails.css";
 
@@ -105,7 +105,7 @@ class GotDetails extends React.Component {
               </label>
             ))}
           </div>
-          <button class="button" onClick={this.props.history.goBack}>
+          <button class="back-button" onClick={this.props.history.goBack}>
             BACK
           </button>
         </section>
