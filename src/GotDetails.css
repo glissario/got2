@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+main {
+  background-color: #fafafa;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.fam-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coatOfArms {
+  max-width: 40rem;
+  padding: 2rem 0.5rem;
+}
+
+.followers {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem 0.5rem;
+}
+.follower {
+  text-align: center;
+}
+.follower:hover {
+  color: brown;
+}
+.button {
+  background-color: white;
+  margin: 1.25rem;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 814px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+  .wappon {
+    font-size: 0.9rem;
+  }
+  .follower {
+    font-size: 0.9rem;
+  }
+}
